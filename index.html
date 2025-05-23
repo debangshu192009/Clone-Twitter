@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" href="https://twitter.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main flex">
+
+        <div class="First flex flex-col items-end bg-whit7 w-full h-full sticky top-0">
+            <div class="logo w-1/2"><img class="w-8 mt-3 " src="twitter.png" alt=""></div>
+
+            <ul class="flex flex-col w-1/2">
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[130px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="home.png" alt="">Home</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[150px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="search (1).png" alt="">Explore</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[190px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="notification-bell.png" alt="">Notifications</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[160px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="email.png" alt="">Message</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[120px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="home.png" alt="">Grok</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[170px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="bookmark.png" alt="">Bookmarks</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[120px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="briefcase.png" alt="">Jobs</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[190px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="community.png" alt="">Communities</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[150px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="twitter.png" alt="">Premium</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[190px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="flash.png" alt="">Verified_Orgs</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[140px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="avatar.png" alt="">Profile</li>
+                <li
+                    class="flex gap-3 text-xl pl-4 mt-3 h-12 w-[120px] rounded-full hover:bg-gray-200 items-center justify-start cursor-pointer">
+                    <img class="w-6 h-6" src="more.png" alt="">More</li>
+            </ul>
+            <div class="w-1/2 mt-10">
+                <button
+                    class="h-14 w-64 rounded-full bg-black text-white font-bold cursor-pointer hover:bg-gray-900">Post</button>
+            </div>
+        </div>
+
+
+        <div class="Second relative bg-white w-full h-full border border-x-gray-300 border-y-white">
+
+            <div class="head h-14 w-full flex border-[1px] border-b-gray-200 border-t-white border-x-white">
+                <div class="relative left w-full flex flex-col justify-center items-center hover:bg-gray-200 font-bold">
+                    For You
+                    <div class="absolute bottom-0 w-14 h-1 bg-blue-500 rounded-full"></div>
+                </div>
+                <div class="right w-full flex justify-center items-center hover:bg-gray-200">Following</div>
+            </div>
+
+            <div class="MiddleHappening relative h-28 border-[1px] border-b-gray-200 border-t-white border-x-white">
+                <div class="flex">
+                    <img class="userLogo w-10 m-4 rounded-full"
+                        src="data:image/jpeg;base64,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"
+                        alt="">
+                    <div class="question text-xl mt-5 text-gray-500">What's happening?</div>
+                </div>
+
+                <ul class="flex gap-4 ml-20">
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-3" src="image.png" alt="">
+                    </li>
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-4" src="gif.png" alt="">
+                    </li>
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-4" src="poll.png" alt="">
+                    </li>
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-4" src="poll.png" alt="">
+                    </li>
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-4" src="happy.png" alt="">
+                    </li>
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-4" src="calendar.png" alt="">
+                    </li>
+                    <li class="flex justify-center items-center w-8 h-8 rounded-full hover:bg-gray-200  cursor-pointer">
+                        <img class="w-4" src="pin.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <button
+                class="absolute top-30 right-5 w-16 h-9 rounded-full bg-gray-500 text-white font-bold cursor-pointer hover:bg-gray-600">Post</button>
+
+            <div class="Allposts">
+
+                <div class="post relative">
+                    <div class="flex">
+                        <img class="rounded-full w-10 m-4"
+                            src="https://pbs.twimg.com/profile_images/1774435030556635136/hn857B5__400x400.jpg" alt="">
+                        <div class="flex items-center gap-2">
+                            <div class="username">R A T N I S H </div> <img class="w-[16px] h-[16px]"
+                                src="checklist.png" alt="">
+                            <div class="text-gray-500">@LoyalSachinFan · 2h</div>
+                        </div>
+                    </div>
+                    <div class="description absolute left-16 top-12">Wow Mumbai great job. Jai Hind!</div>
+                    <div class="postimg ml-14 mt-4 mr-5 mb-14">
+                        <img class="rounded-2xl" src="https://pbs.twimg.com/media/Grel-k2WQAE9a3g?format=jpg&name=small"
+                            alt="post">
+                        <div>
+                            <ul class="absolute flex gap-24 mt-4">
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-blue-100 hover:text-blue-400 cursor-pointer">
+                                        <img class="absolute h-5 w-5 left-1.5 top-1.5" src="comment.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-green-200 hover:text-green-400 cursor-pointer">
+                                        <img class="absolute h-6 w-6 left-1 top-1" src="repost.png" alt=""><span
+                                            class="absolute left-8 top-1.5">429K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-red-200 hover:text-red-500 cursor-pointer">
+                                        <img class="absolute h-5 w-5 left-1.5 top-1.5" src="heart.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-blue-100 hover:text-blue-400 cursor-pointer">
+                                        <img class="absolute h-4 w-4 left-1.5 top-1.5" src="bar-graph.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <ul class="absolute right-0 flex gap-[5px] mt-3.5">
+
+                                <li>
+                                    <div class="relative w-9 h-9 rounded-full flex gap-4 hover:bg-blue-100"><img
+                                            class="absolute left-2 top-2 h-5 w-5 cursor-pointer" src="bookmark.png"
+                                            alt="">
+                                    </div>
+                                </li>
+                                <li class="mr-4">
+                                    <div class="relative w-9 h-9 rounded-full flex gap-4 hover:bg-blue-100"><img class="absolute left-2 top-2 w-5 h-5 cursor-pointer 
+                    " src="share.png" alt=""></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="border-[1px] border-gray-200 w-full"></div>
+
+                <div class="post relative">
+                    <div class="flex">
+                        <img class="rounded-full w-10 m-4"
+                            src="https://pbs.twimg.com/profile_images/1711261283398643712/s9qom2Lg_200x200.jpg" alt="">
+                        <div class="flex items-center gap-2">
+                            <div class="username">𝐑𝐮𝐬𝐡𝐢𝐢𝐢⁴⁵</div> <img class="w-[16px] h-[16px]"
+                                src="checklist.png" alt="">
+                            <div class="text-gray-500">@rushiii_12 · 22h</div>
+                        </div>
+                    </div>
+                    <div class="description absolute left-16 top-12">🚨ROHIT SHARMA HAS MADE A BIG DECISION.!</div>
+                    <div class="description-2 ml-14 mt-4">It's been reported that he'll undergo surgery for a hamstring
+                        injury
+                        after the 2025 IPL season.
+
+                        Rohit has been dealing with this injury for five years, and this step seems necessary to finally
+                        get rid of the problem. </div>
+                    <div class="postimg ml-14 mt-4 mr-5 mb-14">
+                        <img class="rounded-2xl" src="https://pbs.twimg.com/media/GrieS-lbYAAdBdz?format=jpg&name=small"
+                            alt="post">
+                        <div>
+                            <ul class="absolute flex gap-24 mt-4">
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-blue-100 hover:text-blue-400 cursor-pointer">
+                                        <img class="absolute h-5 w-5 left-1.5 top-1.5" src="comment.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-green-200 hover:text-green-400 cursor-pointer">
+                                        <img class="absolute h-6 w-6 left-1 top-1" src="repost.png" alt=""><span
+                                            class="absolute left-8 top-1.5">429K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-red-200 hover:text-red-500 cursor-pointer">
+                                        <img class="absolute h-5 w-5 left-1.5 top-1.5" src="heart.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-blue-100 hover:text-blue-400 cursor-pointer">
+                                        <img class="absolute h-4 w-4 left-1.5 top-1.5" src="bar-graph.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <ul class="absolute right-0 flex gap-[5px] mt-3.5">
+
+                                <li>
+                                    <div class="relative w-9 h-9 rounded-full flex gap-4 hover:bg-blue-100"><img
+                                            class="absolute left-2 top-2 h-5 w-5 cursor-pointer" src="bookmark.png"
+                                            alt="">
+                                    </div>
+                                </li>
+                                <li class="mr-4">
+                                    <div class="relative w-9 h-9 rounded-full flex gap-4 hover:bg-blue-100"><img class="absolute left-2 top-2 w-5 h-5 cursor-pointer 
+                    " src="share.png" alt=""></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="border-[1px] border-gray-200 w-full"></div>
+
+                <div class="post relative">
+                    <div class="flex">
+                        <img class="rounded-full w-10 m-4"
+                            src="https://pbs.twimg.com/profile_images/1807134036449529856/2TB7kbUM_200x200.jpg" alt="">
+                        <div class="flex items-center gap-2">
+                            <div class="username">Mufaddal Vohra</div> <img class="w-[16px] h-[16px]"
+                                src="checklist.png" alt="">
+                            <div class="text-gray-500">@mufaddal_vohra · 1h</div>
+                        </div>
+                    </div>
+                    <div class="description absolute left-16 top-12">INDIA TOUR OF ENGLAND UPDATES:</div>
+                    <div class="description-2 ml-14 mt-4">- Shubman Gill set to named captain.
+                        - Sai Sudharsan and Karun Nair in contention to get a spot.
+                        - KL Rahul likely to open.
+                        - Gill to bat at No.4. (Cricbuzz). </div>
+                    <div class="postimg ml-14 mt-4 mr-5 mb-14">
+                        <img class="rounded-2xl" src="https://pbs.twimg.com/media/GrneviBWgAA0ji5?format=jpg&name=small"
+                            alt="post">
+                        <div>
+                            <ul class="absolute flex gap-24 mt-4">
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-blue-100 hover:text-blue-400 cursor-pointer">
+                                        <img class="absolute h-5 w-5 left-1.5 top-1.5" src="comment.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-green-200 hover:text-green-400 cursor-pointer">
+                                        <img class="absolute h-6 w-6 left-1 top-1" src="repost.png" alt=""><span
+                                            class="absolute left-8 top-1.5">429K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-red-200 hover:text-red-500 cursor-pointer">
+                                        <img class="absolute h-5 w-5 left-1.5 top-1.5" src="heart.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div
+                                        class="relative h-8 w-8 flex gap-2 text-[13px] text-gray-500 rounded-full hover:bg-blue-100 hover:text-blue-400 cursor-pointer">
+                                        <img class="absolute h-4 w-4 left-1.5 top-1.5" src="bar-graph.png" alt=""><span
+                                            class="absolute left-8 top-1.5">2.9K</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <ul class="absolute right-0 flex gap-[5px] mt-3.5">
+
+                                <li>
+                                    <div class="relative w-9 h-9 rounded-full flex gap-4 hover:bg-blue-100"><img
+                                            class="absolute left-2 top-2 h-5 w-5 cursor-pointer" src="bookmark.png"
+                                            alt="">
+                                    </div>
+                                </li>
+                                <li class="mr-4">
+                                    <div class="relative w-9 h-9 rounded-full flex gap-4 hover:bg-blue-100"><img class="absolute left-2 top-2 w-5 h-5 cursor-pointer 
+                    " src="share.png" alt=""></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="Third bg-white w-full h-[1100px] hidden md:block sticky top-0 z-20">
+            <div class="search sticky top-0">
+                <img class="absolute top-[21px] right-[575px] w-4 h-4 z-10" src="search (1).png" alt="">
+                <input type="text" placeholder="Search"
+                    class="relative pb-1 mt-1.5 ml-7 w-[350px] h-12 rounded-full placeholder:text-black bg-white text-black border-[1px] border-gray-300 outline-none pl-9">
+            </div>
+            <div class="Premimum h-36 w-[350px] border border-gray-100 rounded-xl mt-3 ml-7 ">
+                <h1 class="mt-2 font-bold text-[22px] ml-3.5 text-gray-900">Subscribe To Premium</h1>
+                <p class="leading-none mt-2.5 ml-3.5 text-gray-800">Subscribe to unlock new features and if eligible,
+                    receive a share of revenue.</p>
+                <button
+                    class="font-bold mt-3 ml-3.5 h-9 w-28 rounded-full bg-blue-500 text-white hover:bg-blue-600 cursor-pointer">Subscribe</button>
+            </div>
+
+
+            <div class="Happening h-[550px] w-[350px] border border-gray-200 rounded-xl mt-3 ml-7">
+                <h1 class="m-2 ml-3 text-[22px] font-bold">What's Happening</h1>
+
+                <div class="flex">
+                    <img class="ml-4 mt-3 w-16 h-16 rounded-xl"
+                        src="https://pbs.twimg.com/semantic_core_img/1922337722435276800/juhKHCTg?format=jpg&name=240x240"
+                        alt="">
+                    <div class="flex flex-col ml-4">
+                        <h1 class="mt-2 text-[18px] font-bold">Google I/O 2025</h1>
+                        <div class="text-gray-500 text-[14px]">LIVE</div>
+                    </div>
+                </div>
+
+                <ul class="mt-5 flex flex-col gap-4 cursor-pointer">
+                    <li class="relative flex flex-col pl-4 pt-2 hover:bg-gray-200">
+                        <div class="text-sm text-gray-500">Trending in India</div>
+                        <div class="text-2sm font-bold text-gray-900">#Israel</div>
+                        <div class="text-sm text-gray-500">37.2K Posts</div>
+                        <img class="absolute top-3 left-72 w-4 text-gray-400" src="more (1).png" alt="dots">
+                    </li>
+
+                    <li class="relative flex flex-col pl-4 pt-2 hover:bg-gray-200">
+                        <div class="text-sm text-gray-500">Technology · Trending</div>
+                        <div class="text-2sm font-bold text-gray-900">AI/ML</div>
+                        <div class="text-sm text-gray-500">15K Posts</div>
+                        <img class="absolute top-3 left-72 w-4 text-gray-400" src="more (1).png" alt="dots">
+                    </li>
+
+                    <li class="relative flex flex-col pl-4 pt-2 hover:bg-gray-200">
+                        <div class="text-sm text-gray-500">Trending in India</div>
+                        <div class="text-2sm font-bold text-gray-900">Language</div>
+                        <div class="text-sm text-gray-500">39.7K Posts</div>
+                        <img class="absolute top-3 left-72 w-4 text-gray-400" src="more (1).png" alt="dots">
+                    </li>
+
+                    <li class="relative flex flex-col pl-4 pt-2 hover:bg-gray-200">
+                        <div class="text-sm text-gray-500">Sports · Trending</div>
+                        <div class="text-2sm font-bold text-gray-900">#VaibhavSuryavanshi</div>
+                        <div class="text-sm text-gray-500">2,097 Posts</div>
+                        <img class="absolute top-3 left-72 w-4 text-gray-400" src="more (1).png" alt="dots">
+                    </li>
+
+                    <li class="pl-4 text-2sm text-blue-500 hover:bg-gray-200">Show More</li>
+                </ul>
+            </div>
+
+            <div class="who_follow h-[250px] w-[350px] border border-gray-200 rounded-xl mt-3 ml-7">
+                <h1 class="m-2 ml-3 text-[22px] font-bold">Who to follow</h1>
+
+                <ul class="mt-3 gap-6">
+                    <li class="flex pl-4 pt-3 hover:bg-gray-200 leading-4 justify-items-center gap-5">
+                        <img class="w-8 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1700857329703677952/6n0-1C1Z_200x200.jpg" alt="">
+                        <div class="flex flex-col">
+                            <div class="text-2sm ">Gautam Gambhir</div>
+                            <div class="text-sm text-gray-500">@gautamgambhir</div>
+                        </div>
+                        <img class="w-[16px] h-[16px]" src="checklist.png" alt="">
+                        <button
+                            class="h-8 w-20 rounded-full bg-gray-900 text-white font-bold hover:bg-black cursor-pointer">Follow</button>
+                    </li>
+
+                    <li class="flex pl-4 pt-3 hover:bg-gray-200 leading-4 justify-items-center gap-5">
+                        <img class="w-8 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_200x200.jpg" alt="">
+                        <div class="flex flex-col">
+                            <div class="text-2sm ">Virat Kohli</div>
+                            <div class="text-sm text-gray-500">@viratkohli</div>
+                        </div>
+                        <img class="w-[16px] h-[16px]" src="checklist.png" alt="">
+                        <button
+                            class="h-8 w-20 rounded-full bg-gray-900 text-white font-bold hover:bg-black cursor-pointer">Follow</button>
+                    </li>
+
+                    <li class="flex pl-4 pt-3 hover:bg-gray-200 leading-4 justify-items-center gap-5">
+                        <img class="w-8 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1923451603740168192/bBoBROAs_200x200.jpg" alt="">
+                        <div class="flex flex-col">
+                            <div class="text-2sm ">Kekius Maximus</div>
+                            <div class="text-sm text-gray-500">@elonmusk</div>
+                        </div>
+                        <img class="w-[16px] h-[16px]" src="checklist.png" alt="">
+                        <button
+                            class="h-8 w-20 rounded-full bg-gray-900 text-white font-bold hover:bg-black cursor-pointer">Follow</button>
+                    </li>
+
+                    <li class="pl-4 pt-3 pb-3 text-2sm text-blue-500 hover:bg-gray-200 rounded-2xl">Show More</li>
+                </ul>
+            </div>
+
+            <div class="foot h-[250px] w-[350px] rounded-xl mt-3 ml-7">
+                <p class="text-[13px] pl-5 text-gray-600 leading-6">Terms of Service
+                    | Privacy Policy | Cookie Policy | Accessibility | Ads info More
+                    © 2025 X Corp.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
